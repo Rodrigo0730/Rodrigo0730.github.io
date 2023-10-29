@@ -4,5 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     menuButton.addEventListener("click", function() {
         nav.classList.toggle("active");
+        
     });
 });
