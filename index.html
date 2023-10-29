@@ -1,1 +1,114 @@
-Hello world! !
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrigo Morales - Personal Website</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="src/styles/styles.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Rodrigo Morales Martínez</h1>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact me</a></li>
+          </ul>
+        </nav>
+        <div id="menu-button">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Hey! My name is Rodrigo, this is my personal portfolio</h1>
+        <p>I'm a student in the University of Helsinki doing the Bachelor's Programme of Science in Mathematics.
+          
+        </p>
+        <a href="#portfolio" class="cta-button">View My Work</a>
+      </div>
+    </section>
+
+    <section class="project-section">
+      <div class="text-container">
+        <h1>
+          My projects
+        </h1>
+      </div>
+      <div class="container">
+        <div class="project-card">
+            <img src="{{ url_for('static', filename='img/Sine_tent_map_BD.png') }}" alt="Project 1">
+            <h2>Chaotic-pRNG</h2>
+            <p>pRNG based on a chaotic system which exhibits high lyapunov exponents for a big range of mu,
+               the constant of the system. The system is a version which combines the tent map and the sine map. 
+               Both exhibit chaotic behaviour independently, but when put together better results were obtained.
+            </p>
+            <div class="buttons">
+                <a href="https://github.com/Rodrigo0730/Chaotic-pRNG" class="github-button">Repository <box-icon name='link' color="#ffffff" size='xs'></box-icon></a> 
+                <a href="https://www.example.com/project1-demo" class="demo-button">Live Demo</a>
+            </div>
+        </div>
+      
+        <div class="project-card">
+            <img class="project-img" src="https://media.cybernews.com/images/featured/2020/12/What-is-AES-Encryption.jpg" alt="Project 1">
+            <h2>Chaos based AES-256</h2>
+            <p>Implementation of Chaos-based pNRG for AES-256 text encryption algorithm.</p>
+            <div class="buttons">
+                <a href="https://github.com/Rodrigo0730/Chaos-based-AES-256" class="github-button">Repository <box-icon name='link' color="#ffffff" size='xs'></box-icon></a> 
+                <a href="https://www.example.com/project2-demo" class="demo-button">Live Demo</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+          <hr>
+          <div class="box-contact">
+            <div class="contact contact-email">
+                <p>
+                  <i class="ri-mail-fill"></i>
+                  <box-icon color="#d3cccc" name='envelope'></box-icon>
+                  Send an email
+                </p>
+            </div>
+            <div class="contact contact-linkedin">
+                <p>
+                  <i class="ri-linkedin-box-fill"></i>
+                  <box-icon name='linkedin' type='logo' color="#d3cccc" ></box-icon>
+                  LinkedIn
+                </p>
+            </div>
+            <div class="contact contact-github">
+                <p>
+                  <i class="ri-github-fill"></i>
+                  <box-icon type='logo' color="#d3cccc" name='github'></box-icon>
+                  Github
+                </p>
+            </div>
+            <div class="contact contact-twitter">
+                <p>
+                  <i class="ri-twitter-fill"></i>
+                  <box-icon type='logo' color="#d3cccc" name='twitter'></box-icon>
+                  Twitter
+                </p>
+            </div>
+          </div>
+        </div>
+
+    <script src="src/js/scripts.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  </body>
+</html>
