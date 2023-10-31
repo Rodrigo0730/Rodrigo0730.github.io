@@ -127,6 +127,70 @@ nav ul li a {
   width: 100%;
 }
 
+.box {
+	display: flex;
+  top: 10%;
+  transform: translateY(150%) translateX(15%);
+  
+
+}
+.box .inner {
+	width: 800px;
+	height: 150px;
+	line-height: 150px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+  opacity: 0.8;
+  
+}
+
+.box .inner:first-child {
+	background: linear-gradient(to left, #176B8782, #04364ac0);
+	color: #ffffff;
+	transform-origin: right;
+	transform: perspective(75px) rotateY(-15deg);
+  border-top: 3px solid var(--background-color);
+  border-bottom: 3px solid var(--background-color);
+  border-left: 10px solid var(--background-color);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.box .inner:last-child {
+	background: linear-gradient(to right, #dafffbba, #64CCC582);
+	color: var(--background-color);
+	transform-origin: left;
+	transform: perspective(75px) rotateY(15deg);
+  border-top: 3px solid var(--background-color);
+  border-bottom: 3px solid var(--background-color);
+  border-right: 10px solid var(--background-color);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
 /*footer section*/
 footer {
   padding: 40px 0 60px 0;
