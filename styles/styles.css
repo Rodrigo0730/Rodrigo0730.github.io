@@ -68,8 +68,13 @@ header .container {
 header .h1 {
   font-size: 20px;
   font-weight: 100;
-  
-  
+}
+
+header .a {
+  font-size: 20px;
+  font-weight: 100; 
+  text-decoration: none;
+  color: var(--text-color);
 }
 
 nav ul {
@@ -130,7 +135,7 @@ nav ul li a {
 .box {
 	display: flex;
   top: 10%;
-  transform: translateY(150%) translateX(15%);
+  transform: translateX(-50%);
   
 
 }
