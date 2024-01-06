@@ -14,7 +14,7 @@
     <header>
       <div class="container">
         <h1>
-          <a href="index.html">Rodrigo Morales</a>
+          <a href="index.html">Rodrigo Morales Martínez</a>
         </h1>
         <nav id="navbar">
           <ul>
@@ -33,11 +33,17 @@
     </header>
 
     <section class="hero">
-        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero-background.jpg); height:100vh; width:2000px; background-size: 1700px;">
-          
-          
+      <div class="hero-content">
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hero-background.jpg); height:100vh; width:2000px; background-size: 1700px;"></div>
+        <div class="hero-text">
+          <h2>Hi! My name is Rodrigo and this is my personal website</h2>
+
+          <button class="contact contact-pdf">
+            See my resume
+          </button>
         </div>
-    </section>
+      </div>  
+      </section>
 
     <section id="Projects" class="project-section">
       <div class="text-container">
@@ -70,6 +76,19 @@
       </div>
     </section>
 
+    <section class="pdf-preview-section">
+      <div class="text-container">
+        <h1>
+          My resume
+        </h1>
+      </div>
+      <div class="container">
+        <div class="pdf-preview">
+          <iframe id="pdfPreview" src="pdf/Resume_6JAN.pdf" width="100%" height="500px"></iframe>
+        </div>
+      </div>
+    </section>
+
     <footer id="contact">
         <div class="container">
           <hr>
@@ -90,11 +109,10 @@
             </div>
             <div class="contact contact-github">
                 <p>
-                  <a href="https://github.com/Rodrigo0730">
-                    <i class="ri-github-fill"></i>
-                    <box-icon type='logo' color="#d3cccc" name='github'></box-icon>
-                    Github
-                  </a>
+                  <i class="ri-github-fill"></i>
+                  <box-icon type='logo' color="#d3cccc" name='github'></box-icon>
+                  Github
+                  
                 </p>
             </div>
             <div class="contact contact-twitter">

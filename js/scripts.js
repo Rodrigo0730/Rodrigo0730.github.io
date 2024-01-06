@@ -7,3 +7,13 @@ document.addEventListener("DOMContentLoaded", function() {
         
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const pdfPreviewButton = document.querySelector('.hero-text button');
+    const pdfPreviewIframe = document.getElementById('pdfPreview');
+
+    pdfPreviewButton.addEventListener('click', function () {
+      // Scroll to the PDF preview section
+      pdfPreviewIframe.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
