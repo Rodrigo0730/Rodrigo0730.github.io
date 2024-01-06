@@ -132,7 +132,7 @@ nav ul li a {
   width: 100vw; 
   overflow: hidden; 
   background-size: cover; 
-  
+
 }
 .hero-content {
   position: relative;
@@ -153,7 +153,7 @@ nav ul li a {
 .hero-text h2 {
   font-size: 2rem;
   font-weight: 550;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .hero-text button {
